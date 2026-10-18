@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniil — портфолио работ</title>
+  <meta name="description" content="Портфолио веб-проектов Daniil.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__logo" href="#top" aria-label="Daniil — на главную"><img src="images/logo.png" alt="Логотип Daniil" width="51" height="50"></a>
+    <nav class="nav__links" aria-label="Основная навигация">
+      <a href="#top">Главная</a>
+      <a href="#services">Услуги</a>
+      <a href="#works">Проекты</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <a class="btn btn--light" href="#contact">Написать мне</a>
+  </header>
+
+  <main id="top">
+
+    <!-- 1. HERO: curved 3D cylinder loop -->
+    <section class="hero">
+      <div class="hero__copy">
+        <a class="badge" href="#works">Новые работы уже в портфолио <span aria-hidden="true">→</span></a>
+        <h1 class="hero__title">
+          <span class="hero__line">Сделай свой сайт</span>
+          <span class="hero__line hero__line--fade">уникальным.</span>
+        </h1>
+        <p class="hero__sub">Мое портфолио работ:</p>
+      </div>
+
+      <div class="cylinder-wrap">
+        <div class="cylinder" data-cylinder aria-hidden="true">
+          <div class="cylinder__stage" data-cylinder-stage></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SCROLL: perspective tilt card -->
+    <section class="scroll-section" id="showcase">
+      <div class="scroll-section__header" data-scroll-header>
+        <h2>Каждый проект — отдельная история</h2>
+        <p>Выберите работу, чтобы посмотреть её крупнее.</p>
+      </div>
+
+      <div class="scroll-stage" data-scroll-stage>
+        <div class="scroll-card" data-scroll-card>
+          <div class="scroll-card__bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="scroll-card__url" data-card-title>Проект</span>
+          </div>
+          <div class="scroll-card__screen">
+            <img data-card-image alt="">
+          </div>
+          <div class="scroll-card__thumbs" data-card-thumbs role="tablist" aria-label="Выбор проекта"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES -->
+    <section class="section" id="services">
+      <div class="section__head">
+        <h2>Услуги</h2>
+        <p>Что я делаю для клиентов.</p>
+      </div>
+      <div class="services reveal-grid">
+        <article class="service reveal">
+          <div class="service__img service__img--light"><img src="images/service-bots.jpg" alt="Telegram-боты" loading="lazy" style="object-position: 50% 28%"></div>
+          <div class="service__body">
+            <h3>Telegram-боты</h3>
+            <p>Создаю ботов для бизнеса: приём заявок и записей, каталоги, оплата, рассылки и автоответы. Бот работает 24/7 и разгружает вас от рутины.</p>
+            <ul class="tags"><li>Запись и заявки</li><li>Оплата</li><li>Рассылки</li></ul>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service__img"><img src="images/service-infographics.jpg" alt="Инфографика" loading="lazy"></div>
+          <div class="service__body">
+            <h3>Инфографика</h3>
+            <p>Сложные данные превращаются в понятную и красивую визуальную историю, которую приятно читать.</p>
+            <ul class="tags"><li>Структура</li><li>Графика</li><li>Подача</li></ul>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service__img"><img src="images/service-posters.jpg" alt="Лендинг — сайты" loading="lazy"></div>
+          <div class="service__body">
+            <h3>Лендинг — сайты</h3>
+            <p>Одностраничные сайты, которые продают: сильный первый экран, понятная структура, анимации и удобная заявка. Адаптивно под телефон и компьютер.</p>
+            <ul class="tags"><li>Дизайн</li><li>Вёрстка</li><li>Запуск</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. GALLERY: all works, grouped -->
+    <section class="works" id="works">
+      <div class="works__head">
+        <h2>Мои работы</h2>
+        <p>Нажмите на любую, чтобы рассмотреть детали.</p>
+      </div>
+      <div data-gallery></div>
+    </section>
+
+    <!-- 5. ABOUT ME -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <h2>Обо мне</h2>
+        <p>Кто стоит за этими работами.</p>
+      </div>
+      <div class="about reveal">
+        <div class="about__art" data-tilt>
+          <img class="about__eagle" src="images/eagle.png" alt="Орёл — эмблема Daniil" width="560" height="500">
+        </div>
+        <div class="about__body">
+          <h3>Привет, я Daniil</h3>
+          <p>Делаю сайты и Telegram-ботов для бизнеса. Люблю, когда сайт не похож на шаблон: у него есть характер, движение и понятная задача — привести клиента к заявке.</p>
+          <p>Работаю напрямую, без посредников: обсуждаем задачу, показываю варианты, довожу проект до запуска и остаюсь на связи после него.</p>
+          <ul class="tags"><li>Сайты</li><li>Telegram-боты</li><li>Инфографика</li><li>Постеры</li></ul>
+          <a class="btn btn--light about__cta" href="#contact">Обсудить проект</a>
+          <a class="btn btn--ghost about__cta" href="https://t.me/PahanCrypty77" target="_blank" rel="noopener noreferrer">Мой Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Обсудим ваш проект?</h2>
+      <p>Опишите задачу — отвечу в ближайшее время.</p>
+      <div class="contact__links">
+        <a class="btn btn--light" href="mailto:seveneurooo@gmail.com">seveneurooo@gmail.com</a>
+        <a class="btn btn--ghost" href="https://t.me/PahanCrypty77" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a class="btn btn--ghost" href="https://vk.com/id749324876" target="_blank" rel="noopener noreferrer">Написать во ВКонтакте</a>
+        <a class="btn btn--ghost" href="https://t.me/PahanCrypty77" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+      </div>
+    </section>
+
+  </main>
+
+  <dialog class="lightbox" data-lightbox aria-label="Просмотр работы">
+    <button class="lightbox__btn lightbox__close" type="button" data-lightbox-close aria-label="Закрыть">×</button>
+    <button class="lightbox__btn lightbox__prev" type="button" data-lightbox-prev aria-label="Предыдущая">‹</button>
+    <img class="lightbox__img" data-lightbox-img alt="">
+    <button class="lightbox__btn lightbox__next" type="button" data-lightbox-next aria-label="Следующая">›</button>
+    <p class="lightbox__caption" data-lightbox-caption></p>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
